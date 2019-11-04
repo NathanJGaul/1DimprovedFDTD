@@ -1,5 +1,5 @@
-#ifndef _FDTD1_H
-#define _FDTD1_H
+#ifndef _FDTD_H
+#define _FDTD_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,4 +33,9 @@ typedef struct Grid Grid;
 #define MaxTime g->maxTime
 #define Cdtds   g->cdtds
 
-#endif /* matches #ifndef _FDTD1_H */
+/* function prototypes */
+void gridInit(Grid *g);
+void updateH(Grid *g);
+void updateE(Grid *g);
+
+#endif /* matches #ifndef _FDTD_H */
