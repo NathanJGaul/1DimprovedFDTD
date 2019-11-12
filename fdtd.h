@@ -47,6 +47,7 @@ void gridInit(Grid *g);
 
 void snapshotInit(Grid *g);
 void snapshot(Grid *g);
+int countDigits(int n);
 
 void tfsfInti(Grid *g);
 void tfsfUpdate(Grid *g);

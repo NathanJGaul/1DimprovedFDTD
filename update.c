@@ -6,7 +6,8 @@
 void updateH(Grid *g) {
     int mm;
 
-    for (mm = 0; mm < SizeX - 1; mm++)  
+    #pragma omp parallel for
+    for (mm = 0; mm < SizeX - 1; mm++)
         Hy(mm) = Chyh(mm) * Hy(mm) + 
                  Chye(mm) * (Ez(mm + 1) - Ez(mm));
 
@@ -16,6 +17,7 @@ void updateH(Grid *g) {
 void updateE(Grid *g) {
     int mm;
 
+    #pragma omp parallel for
     for (mm = 1; mm < SizeX - 1; mm++)
         Ez(mm) = Ceze(mm) * Ez(mm) + 
                  Cezh(mm) * (Hy(mm) - Hy(mm - 1));

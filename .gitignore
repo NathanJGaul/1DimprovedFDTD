@@ -1,4 +1,6 @@
 *.out
 *.o
 
-results/
+results/*.gif
+results/*.png
+results/*.[0-9]*
