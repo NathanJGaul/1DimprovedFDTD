@@ -1,4 +1,4 @@
-/* Imrpoved bare-bones 1D FDTD simulation. */
+/* Improved bare-bones 1D FDTD simulation. */
 
 #include "fdtd.h"
 
