@@ -3,7 +3,7 @@
 #include "fdtd.h"
 
 static int temporalStride = 0, spatialStride, startTime,
-    startNode, endNode, frame = 0;
+    startNode, endNode;
 static char basename[100];
 static const char BASEDIR[] = "./results/";
 
