@@ -49,7 +49,7 @@ void snapshotInit(Grid *g);
 void snapshot(Grid *g);
 int countDigits(int n);
 
-void tfsfInti(Grid *g);
+void tfsfInit(Grid *g);
 void tfsfUpdate(Grid *g);
 
 void updateH(Grid *g);
