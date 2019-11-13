@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# TODO move make_movie.sh out of results directory
+
 echo Enter a basename: 
 read basename
 
